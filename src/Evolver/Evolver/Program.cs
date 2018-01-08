@@ -11,7 +11,7 @@ namespace Evolver
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("{{");
+            Console.WriteLine("{{ ");
             var cnn = new SqlConnection("Server=192.168.15.60;Database=TestEvlv20171228a;Integrated Security=true;");
             var evolve = new Evolve.Evolve(cnn, msg => Console.WriteLine(msg))
             {
